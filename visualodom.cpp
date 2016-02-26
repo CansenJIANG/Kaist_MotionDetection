@@ -60,6 +60,8 @@ bool VisualOdom::MotionEst(double size, double level, double min_disp, double y_
     calcOpticalFlowPyrLK(StereoRig_Prev.ImageL_Rec_Rescale,StereoRig.ImageL_Rec_Rescale,featureLP,featureL,found1,err1,Size(size,size),level);
     calcOpticalFlowPyrLK(StereoRig_Prev.ImageR_Rec_Rescale,StereoRig.ImageR_Rec_Rescale,featureRP,featureR,found2,err2,Size(size,size),level);
 
+    /*----------------------- Input here -----------------------*/
+
     //calcOpticalFlowPyrLK(StereoRig.ImageL_Gray_Rec,StereoRig.ImageR_Gray_Rec,featureL,featureLR,found3,err3,Size(size,size),level);
     //calcOpticalFlowPyrLK(StereoRig.ImageR_Gray_Rec,StereoRig.ImageL_Gray_Rec,featureR,featureRL,found4,err4,Size(size,size),level);
 
